@@ -1,1 +1,1 @@
-Это файл для игры марио брос, ОБЯЗАТЕЛЬНО УСТАНОВИТЕ PYGAME!!!
+This is a file for the Mario Bros game, BE SURE TO INSTALL PYGAME!!!
