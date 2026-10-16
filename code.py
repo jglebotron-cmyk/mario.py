@@ -349,3 +349,41 @@ while running:
 
 pygame.quit()
 sys.exit()
+
+# --- СКРИПТ ДЛЯ СОЗДАНИЯ СВОЙСТВ ПРОДУКТА MARIO.PY ---
+import os
+
+metadata_content = """
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 0, 0, 0),
+    prodvers=(1, 0, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+    ),
+  kids=[
+    StringFileInfo(
+      [
+      StringTable(
+        '040904b0',
+        [StringProperty('CompanyName', 'Gleb & Besya Hacking Corp.'),
+        StringProperty('FileDescription', 'Mario Game'),
+        StringProperty('FileVersion', '1.0.0'),
+        StringProperty('InternalName', 'mario'),
+        StringProperty('LegalCopyright', 'Copyright (c) 2026 Gleb.'),
+        StringProperty('OriginalFilename', 'mario.exe'),
+        StringProperty('ProductName', 'Mario Bros. 1983 Special Edition'),
+        StringProperty('ProductVersion', '1.0.0')])
+      ]), 
+    VarFileInfo([VarVersionInfo('Translation', [1033, 1200])])
+  ]
+)
+"""
+
+# Записываем свойства в текстовый файл конфигурации
+with open("file_version_info.txt", "w", encoding="utf-8") as f:
+    f.write(metadata_content.strip())
