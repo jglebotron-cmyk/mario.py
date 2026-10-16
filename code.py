@@ -1,4 +1,4 @@
-# --- КОД ДЛЯ ИГРЫ ---
+# --- CODE FOR THE GAME ---
 import pygame
 import sys
 import random
@@ -8,7 +8,7 @@ import math
 pygame.mixer.init(frequency=22050, size=-8, channels=1)
 
 def generate_bytebeat_sound(formula_func, duration=0.2):
-    """Генерирует 8-битный звук по математической формуле Bytebeat"""
+    """Generates 8‑bit sound using the Bytebeat mathematical formula."""
     sample_rate = 22050
     total_samples = int(sample_rate * duration)
     
