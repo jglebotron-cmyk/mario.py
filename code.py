@@ -356,8 +356,8 @@ import os
 metadata_content = """
 VSVersionInfo(
   ffi=FixedFileInfo(
-    filevers=(1, 0, 0, 0),
-    prodvers=(1, 0, 0, 0),
+    filevers=(2, 0, 0, 0),
+    prodvers=(1, 0, 0, 1),
     mask=0x3f,
     flags=0x0,
     OS=0x40004,
@@ -372,12 +372,12 @@ VSVersionInfo(
         '040904b0',
         [StringProperty('CompanyName', 'Gleb & Besya Hacking Corp.'),
         StringProperty('FileDescription', 'Mario Game'),
-        StringProperty('FileVersion', '1.0.0'),
+        StringProperty('FileVersion', '2.0.0'),
         StringProperty('InternalName', 'mario'),
         StringProperty('LegalCopyright', 'Copyright (c) 2026 Gleb.'),
         StringProperty('OriginalFilename', 'mario.exe'),
         StringProperty('ProductName', 'Mario Bros. 1983 Special Edition'),
-        StringProperty('ProductVersion', '1.0.0')])
+        StringProperty('ProductVersion', '1.0.1')])
       ]), 
     VarFileInfo([VarVersionInfo('Translation', [1033, 1200])])
   ]
